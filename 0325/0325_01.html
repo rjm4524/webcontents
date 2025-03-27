@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- html을 구조화 해야하는 이유 -->
+ <!-- 1.검색 엔진의 최적화 -->
+  <!-- 2.앱의 접근성 -->
+   <!-- 3.유지보수 -->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            
+        </title>
+    </head>
+    <body>
+        <h3>로그인 폼</h3>
+        <hr>
+        <form name="fo" method="get">
+            사용자 ID: <input type="text" size="15" value=""><br>
+            패스워드 :  <input type="password" size="15" value="">
+            <input type="submit" value="완료"><br>
+            텍스트박스 :<textarea cols="20" rows="5">
+                이곳에 문자 입력
+            </textarea>
+        </form>
+
+        <form name="sform" action="http://search.naver.com/search.naver"
+        method="get">
+        네이버 검색창:
+                <input name="query" type="text">
+                <button type="submit">검색</button>
+        </form>
+        나라 : <input type="text" list="countries">
+        <datalist id="countries">
+            <option value="가나"></option>
+            <option value="스위스"></option>
+            <option value="브라질"></option>
+        </datalist>
+        <br>
+        보고싶은것 : <input type="text" list="what">
+        <datalist id="what">
+            <option value="산"></option>
+            <option value="바다"></option>
+            <option value="도시"></option>
+        </datalist>
+    </body>
+
+</html>
